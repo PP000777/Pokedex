@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div>
         <h1>Pokedéx</h1>
+
+        <img class="imagee" src="https://preview.redd.it/b942yo2ge0s41.jpg?auto=webp&s=c5c3779feb1637cd60778a47222a45e62fb27996" alt="Imagem do Pikachu">
+        <div class="info">
+            <p><strong>Nome:</strong><span id="name">---</span></p>
+            <p><strong>Tipo:</strong><span id="type">---</span></p>
+            <p><strong>Numero:</strong><span id="number">---</span></p>
+        </div>
+
+        <div class="search-area">
+            <input type="text" id="search" placeholder="Digite o nome ou Numero do Pokémon">
+            <button id="search-button">Buscar</button>
+        </div>
     </div>
 </body>
+
 </html>
