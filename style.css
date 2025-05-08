@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Pixelify Sans', sans-serif;
     background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
@@ -15,12 +16,106 @@ body {
     padding: 20px;
     font-size: 16px;
     line-height: 1.5;
-  }
-  
-.imagee{
+}
+
+.fire { background-color: #F08030; }
+.water { background-color: #6890F0; }
+.grass { background-color: #78C850; }
+.electric { background-color: #F8D030; color: black; }
+.psychic { background-color: #F85888; }
+.ice { background-color: #98D8D8; color: black; }
+.dragon { background-color: #7038F8; }
+.dark { background-color: #705848; }
+.fairy { background-color: #EE99AC; color: black; }
+.normal { background-color: #A8A878; }
+.fighting { background-color: #C03028; }
+.flying { background-color: #A890F0; }
+.poison { background-color: #A040A0; }
+.ground { background-color: #E0C068; color: black; }
+.rock { background-color: #B8A038; }
+.bug { background-color: #A8B820; }
+.ghost { background-color: #705898; }
+.steel { background-color: #B8B8D0; color: black; }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: background-color 0.3s ease, transform 0.5s ease, shadow-box 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container.fire    { background-color: #F5AC78; }
+.container.water   { background-color: #9DB7F5; }
+.container.grass   { background-color: #A7DB8D; }
+.container.electric{ background-color: #FAE078; }
+.container.psychic { background-color: #FA92B2; }
+.container.ice     { background-color: #BCE6E6; }
+.container.dragon  { background-color: #A27DFA; }
+.container.dark    { background-color: #A29288; }
+.container.fairy   { background-color: #F4BDC9; }
+.container.normal  { background-color: #C6C6A7; }
+.container.fighting{ background-color: #D67873; }
+.container.flying  { background-color: #C6B7F5; }
+.container.poison  { background-color: #C183C1; }
+.container.ground  { background-color: #EBD69D; }
+.container.rock    { background-color: #D1C17D; }
+.container.bug     { background-color: #C6D16E; }
+.container.ghost   { background-color: #A292BC; }
+.container.steel   { background-color: #D1D1E0; }
+
+.imagee {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagee:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+input:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover{
+    background-color: #1b1b1b;
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
